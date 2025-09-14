@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project</title>
-    <link rel="stylesheets" href="/stylesheets/index">
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
 </head>
 <body>
-    <div>
-        <h1> Hello brother mai hu ek mini project 
-        </h1>
-        <form action="">
-            <input type="text" placeholder="name" name="name">
-            <input type="text" placeholder="name" name="username">
-            <input type="text" placeholder="name" name="password">
-            <input type="text" placeholder="name" name="age">
-            <input type="text" placeholder="name" name="email">
-            <input type="submit" value="Create Account">
+    <h1>Create Account</h1>
+    <a href="/login">Login</a>
+    <a href="/profile">profile</a>
+    <div class="crt-account">
+        <form action="/register" method="post">
+            <input class="inp-fields" type="text" placeholder="username" name="username">
+            <br>
+            <input class="inp-fields" type="password" placeholder="password" name="password">
+            <br>
+            <input class="inp-fields" type="number" placeholder="age" name="age">
+            <br>
+        
+            <input class="inp-fields" type="text" placeholder="name" name="name">
+            <br>
+            <input class="inp-fields" type="email" placeholder="email" name="email">
+            <br>
+            <input class="submit-btn" type="submit" value="Create Account">
         </form>
     </div>
-    <script src="/javascripts/index"></script>
+    <script src="/javascripts/index.js"></script>
 </body>
 </html>
