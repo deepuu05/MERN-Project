@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="/stylesheets/profile.css">
 </head>
 <body>
-    <h2>Profile</h2>
+    <h2>Profile , <%= userdata.name %></h2>
+    <div>
+        <form action="/post" method="post">
+            <textarea name="content"></textarea>
+            <input type="submit" value= "create new post">
+        </form>
+    </div>
+    <h1> yours posts</h1>
+   <div class="post-boxs">
+        
+
+       <% userdata.posts.reverse().forEach(function(post){ %>
+    <div class="post-box">
+       
+
+     
+        <p>@<%= userdata.username%></p>
+        <p> <%= post.content %></p>
+        <a href="#">like</a>
+        <a href="#">edit</a>
+    </div>
+     <% })%>
+   </div>
 </body>
 </html>

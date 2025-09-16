@@ -2,3 +2,17 @@ body{
     background-color: black;
     color: white;
 }
+.post-box{
+    margin: 4px;
+    width: 455px;
+    height: 150px;
+    border-radius: 5px;
+    background-color:gray;
+    padding: 3px;
+
+}
+.post-boxs{
+    margin: 10px;
+    display:flex;
+    flex-wrap: wrap;
+}
